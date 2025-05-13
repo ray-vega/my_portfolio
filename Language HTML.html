@@ -1,0 +1,71 @@
+Etiquetas
+    <p></p> //Es para la reprersentación de textos
+    <nav></nav> //Indica al navegador una seccio de navegación
+    <header></header> //Encabezado del Sitio o elemento
+    <main></main> //Contenido principal
+    <footer></footer> //Pie de página o elemento
+    <meta> //Le dice al navegador como debe de comportarse al interpretar la pagina web
+    <h1></h1> hasta <h6></h6> // Estas setiquetas le indican al navegador cual es la informació mas importante de 1 hasta 6 es la importacia.
+    <section></section> // Representa una seccion tematica del contenido, suele ir dentro del main.
+    <article></article> // Representa un cotenido independiente y autocontenible, como una oticia, publicació, entrada de blog, etc.
+    <aside></aside> // Representa contenido secundario o complemetario al conteido pricipal. Puede ser ua barra lateral, enlaces relacioados, publicidad, etc.
+    <div></div> //Es u coteedor generico que no tiee significado sematico. Se usa solo para agrupar elemetos y aplicar estilos CSS o scripts JS
+    <ul></ul> //SE utiliza para crear una lista de elementos sin orden especifico, es decir con viñetas
+    <li></li> //Representa cada elemento individual detro de una lista (ordenada o desordenada)
+    <ol></ol> //Se utiliza para crear una lista de elementos con orden especifico, es decir con numeración.
+    <a></a> // Sirve para crear enlaces junto con nav
+    <img> //Sirve para agregar imagenes
+    <form></form> <!-- Es el conteedor pricipal de un formulario. -->
+    <fieldset></fieldset> <!-- Sirve para agrupar logicamete campos relacionados dentro del formulario, visualmete crea u recuadro alrededor de los elemetos agrupados-->
+    <legend></legend> <!-- Es el titulo o etiqueta del grupo de campos-->
+    <label></label> <!-- Se usa para describir un campo-->
+    <Input> <!-- Es la etiqueta para campos de entrada. Permite al usuario escribir texto, elegir opciones, marcar casillas, subir archivos, etc-->
+    <textarea></textarea> <!-- Cuando el usuario ingresara bastante texto se debe ocupar esta etiqueta-->
+    <button></button> <!-- Crea un boton-->
+
+
+Estructura de un archivo
+    En cada documento html existen dos partes, la parte superior con la etiqueta llamada head
+    y la parte inferior llamada body
+    <html>
+        <head>
+            Es lo que le da al navegador para que muestre cierta información para que muestre
+            un sitio web. En que idioma esta echo, cual es el titulo de la pagina, si es 
+            necesario descargar archivos de otras paginas.
+        </head>
+        <body>
+            Es la información que visualizara los usuarios al visitar el sitio web
+        </body>
+    </html>
+
+    Nota: El archivo principal debe de ser index.html
+
+    Para colocar una estructura basica puede ser escribiendo html:5 o colocando:
+        <!DOCTYPE html>  <!--Es lo que nos va a decir que version de html estamos utilizando-->
+        <html lang="es"> <!--Aqui mencionamos cual es el lenguiaje de la pagina-->
+        <head> <!--Es la información que le va a dar al navegador-->
+            <meta charset="UTF-8"> <!--Aplica un endcoding especial para que se muestren acentos ñs y otros acentos,dependiendio el pais e idioma es el charset que se coloca-->
+            <meta http-equiv="X-UA-Compatible" content="IE-edge"> <!--http-equiv="X-UA-Compatible" le indica en una cabecera HTTP enviada por el servidor el nombre del campo. content="IE-edge" le indica al navegador Internet Explorer que debe usar la version mas modera de su motor de rederizado (valor del campo en la cabecera) -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Indica como debe de mostrarse el contenido, como los textox las imagenes-->
+            <title>Document</title> <!--Es el SEO, que sirve para que el usuario pueda encontrarlo con relación de palabras-->
+        </head>
+        <body>
+            
+        </body>
+        </html>
+
+        Nota: Algunas etiquetas tienen etiquetas de cierre y otras no
+
+
+Atributos
+    Un atributo es algo que se coloca e la etiqueta de apertura y son especificos a la etiqueta.
+    Ejem: <a atributo="">
+    
+    <a href="direccion"></a> <!-- Hypertext reference, es dode colocas la dirección del destino al que quieres llevar al usuario.-->
+    <img src="imagen"> <!-- Source, es el atributo donde indicas la ruta(ruta relativa) o URL(ruta absoluta) de la imagen que quieres mostrar-->
+    <img src="imagen" alt="texto alternativo"> <!-- alternative text, se usa para describir que hay en una imagen-->
+    <form action=""></form> <!-- Action, indica a donde se van los datos del formulario-->
+    <input type="valores del atributo"> <!-- Type, define el tipo de dato o comportamiento del campo de entrada-->
+    <input type="valores del atributo" placeholder="valores del atributo"> <!-- Muestra un texto guia dentro del campo-->
+    <button type="valores del atributo" value="Valor">Texto visible del boton</button> <!-- Value, representa el valor que se envia al servidor si el boton se presiona dentro de un formulario-->
+
