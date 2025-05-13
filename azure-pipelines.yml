@@ -1,0 +1,18 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+      - '*'
+
+pool:
+  name: LocalAgents  # Nombre del pool de agentes que ocupo
+  demands:
+    - agent.name -equals agente-windows
+
+steps:
+- script: echo Change detected in Github
+  displayName: 'Run a one-line script'
