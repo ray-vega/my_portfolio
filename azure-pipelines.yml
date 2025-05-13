@@ -9,7 +9,9 @@ trigger:
       - '*'
 
 pool:
-  vmImage: ubuntu-latest
+  name: LocalAgents  # Nombre del pool de agentes que ocupo
+  demands:
+    - agent.name -equals agente-windows
 
 steps:
 - script: echo Change detected in Github
